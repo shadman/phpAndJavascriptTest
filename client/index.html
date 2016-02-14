@@ -25,9 +25,9 @@
     <slick class="horizontal-slider" ng-if="dataLoaded" init-onload="true" data="dataLoaded" slides-to-show="1" dots="false" autoplay="true">
       <div ng-repeat="item in horizontal_items">
 		<div class="thumbnails">
-            <img class="thumbnail-image" ng-src="{{ item.src }}" alt="{{ item.title}}" />
+            <img class="thumbnail-image" ng-src="{{ item.url }}" alt="{{ item.title}}" />
 			<div class="simple-overlay"></div>
-			<ul class="slider-buttons" ng-if="item.description">
+			<ul class="slider-buttons" ng-if="item.title_id">
 				<li class="watch">Watch Trialer</li>
 				<li class="watch">View More</li>
 				<li class="watch">Watch Episode</li>
@@ -39,10 +39,10 @@
 	<hr class="margin">
 	<div class="center-heading"><span>Vertical Carousel</span></div>
 	
-	<slick class="vertical-slider" ng-if="dataLoaded" init-onload="true" data="dataLoaded" slides-to-show="5" dots="false" >
+	<slick class="vertical-slider" ng-if="dataLoaded" init-onload="true" data="dataLoaded" slides-to-show="5" dots="false" responsive="true" >
       <div ng-repeat="item in vertical_items">
         <div class="thumbnails">
-            <img class="thumbnail-image" ng-src="{{ item.src }}" alt="{{ item.title}}" />
+            <img class="thumbnail-image" ng-src="{{ item.url }}" alt="{{ item.title}}" />
 			<div class="overlay" ng-if="item.description">
 				<div class="details">
 					<h2>{{ item.title }}</h2>
@@ -53,7 +53,6 @@
         </div>
       </div>
     </slick>
-	
 	
   </body>
 

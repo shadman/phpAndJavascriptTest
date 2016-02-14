@@ -1,4 +1,4 @@
-/* Styles */
+/* Styling */
 body{
 	background-color:#000000;
 	margin:auto;
@@ -14,29 +14,8 @@ header {
 	padding:1%;
 }
 
+/* Horizontal Slider */
 .horizontal-slider { width:100%; margin:auto; }
-.vertical-slider { width:85%; margin:auto; }
-
-.thumbnails{ }
-.thumbnails img{ width:100%; }
-
-
-.thumbnails:hover .overlay{ opacity:0.8; }
-.thumbnails:hover .thumbnail-image{ }
-.thumbnails .overlay {
-	bottom: 0; left: 0; top: 0; right: 0;
-	margin: auto;
-	position: absolute;
-	background-color: #000000;
-	opacity: 0;
-	padding:5%;
-}
-.thumbnails  .overlay .details  { color: #FFFFFF; font-family: Arial; text-align:center; height: 85%;}
-.thumbnails  .overlay .details  h2 { font-weight: bold; text-transform: capitalize; margin-top:0px; }
-.thumbnails  .overlay .details  p { font-size:13px; padding: 10px; margin-top:-5%; text-transform: capitalize; }
-.thumbnails  .overlay  .watch { color: #FFFFFF;  font-family: Arial; text-align:center; margin-left:30%; border:1px solid #FFFFFF; width:30%; padding:2% 5%; text-transform: uppercase; font-size:12px; cursor:pointer }
-.thumbnails .thumbnail-image{ width:100%; }
-
 .simple-overlay {
 	bottom: 0; left: 0; top: 0; right: 0;
 	margin: auto;
@@ -62,9 +41,33 @@ header {
 	width: 150px;
 	margin-left: 3%;
 	border: 1px solid #FFFFFF;
+	cursor: pointer;
 }
 
 
+/* Vertical Slider */
+.vertical-slider { width:85%; margin:auto; }
+.thumbnails{ }
+.thumbnails img{ width:100%; }
+
+.thumbnails:hover .overlay{ opacity:0.8; }
+.thumbnails:hover .thumbnail-image{ }
+.thumbnails .overlay {
+	bottom: 0; left: 0; top: 0; right: 0;
+	margin: auto;
+	position: absolute;
+	background-color: #000000;
+	opacity: 0;
+	padding:5%;
+}
+.thumbnails  .overlay .details  { color: #FFFFFF; font-family: Arial; text-align:center; height: 85%;}
+.thumbnails  .overlay .details  h2 { font-weight: bold; text-transform: capitalize; margin-top:0px; }
+.thumbnails  .overlay .details  p { font-size:13px; padding: 10px; margin-top:-5%; text-transform: capitalize; }
+.thumbnails  .overlay  .watch { color: #FFFFFF;  font-family: Arial; text-align:center; margin-left:30%; border:1px solid #FFFFFF; width:30%; padding:2% 5%; text-transform: uppercase; font-size:12px; cursor:pointer }
+.thumbnails .thumbnail-image{ width:100%; }
+
+
+/* Center Headings */
 .margin {
 	text-align:center;
 	border: 0;
@@ -89,6 +92,7 @@ header {
 }
 
 
+/* Carousel Styling */
 .slick-prev, .slick-next { 
 	height: 50px;
 	width: 30px;
@@ -102,6 +106,7 @@ header {
 .slick-next:before { content: "›"; }
 
 
+/* Horizontal Carousel Styling */
 .horizontal-slider .slick-next{
 	right: 8%;
 }
@@ -109,6 +114,8 @@ header {
 	left: 8%;
 }
 
+
+/* Vertical Carousel Styling */
 .vertical-slider .slick-next{
 	right: -6%;
 }
