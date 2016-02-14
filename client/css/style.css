@@ -1,0 +1,117 @@
+/* Styles */
+body{
+	background-color:#000000;
+	margin:auto;
+	font-family: Arial;
+	padding-bottom: 100px;
+}
+
+header {
+	margin:auto 0;
+	border-bottom: 3px solid #FFFFFF;
+	height:20px;
+	color:#FFFFFF;
+	padding:1%;
+}
+
+.horizontal-slider { width:100%; margin:auto; }
+.vertical-slider { width:85%; margin:auto; }
+
+.thumbnails{ }
+.thumbnails img{ width:100%; }
+
+
+.thumbnails:hover .overlay{ opacity:0.8; }
+.thumbnails:hover .thumbnail-image{ }
+.thumbnails .overlay {
+	bottom: 0; left: 0; top: 0; right: 0;
+	margin: auto;
+	position: absolute;
+	background-color: #000000;
+	opacity: 0;
+	padding:5%;
+}
+.thumbnails  .overlay .details  { color: #FFFFFF; font-family: Arial; text-align:center; height: 85%;}
+.thumbnails  .overlay .details  h2 { font-weight: bold; text-transform: capitalize; margin-top:0px; }
+.thumbnails  .overlay .details  p { font-size:13px; padding: 10px; margin-top:-5%; text-transform: capitalize; }
+.thumbnails  .overlay  .watch { color: #FFFFFF;  font-family: Arial; text-align:center; margin-left:30%; border:1px solid #FFFFFF; width:30%; padding:2% 5%; text-transform: uppercase; font-size:12px; cursor:pointer }
+.thumbnails .thumbnail-image{ width:100%; }
+
+.simple-overlay {
+	bottom: 0; left: 0; top: 0; right: 0;
+	margin: auto;
+	position: absolute;
+	background-color: #000000;
+	opacity: .3;
+}
+
+.slider-buttons {
+	margin: auto;
+	padding:0;
+	margin-top: -60px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	position:absolute;
+	width:100%;
+}
+.slider-buttons  li{
+	display: inline;
+	list-style:none;
+	padding:1% 3%;
+	width: 150px;
+	margin-left: 3%;
+	border: 1px solid #FFFFFF;
+}
+
+
+.margin {
+	text-align:center;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #FFFFFF, rgba(0, 0, 0, 0));
+	margin-top:50px;
+}
+.center-heading {
+	padding:1% 2%;
+	color:#FFFFFF;
+	text-align: center;
+	position:relative;
+	margin-top:-35px;
+	text-align: center;
+	height: 60px;
+}
+.center-heading  span {
+	background-color:#000000;
+	padding:1% 2%; 
+	font-size: 20px;
+	font-weight:bold;
+}
+
+
+.slick-prev, .slick-next { 
+	height: 50px;
+	width: 30px;
+}
+.slick-prev:before, .slick-next:before{ 
+	font-size: 70px; 
+	color: #FFFFFF; 
+	line-height:1px;
+} 
+.slick-prev:before { content: "‹"; }
+.slick-next:before { content: "›"; }
+
+
+.horizontal-slider .slick-next{
+	right: 8%;
+}
+.horizontal-slider .slick-prev{
+	left: 8%;
+}
+
+.vertical-slider .slick-next{
+	right: -6%;
+}
+.vertical-slider .slick-prev{
+	left: -6%;
+}

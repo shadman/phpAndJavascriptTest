@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="slick-app">
+
+  <head>
+	<meta charset="UTF-8">
+    <script data-require="angular.js@1.2.19" data-semver="1.2.19" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script data-require="jquery@2.1.1" data-semver="2.1.1" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://vasyabigi.github.io/angular-slick/bower_components/slick-carousel/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.css" />
+    <script src="http://vasyabigi.github.io/angular-slick/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="js/angular-slick.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body ng-controller="appController">
+    <!--<button type="button" ng-click="messItUp()">Mess it up</button>-->
+	
+	<header>
+		StarzPlay
+	</header>
+	
+	<hr class="margin">
+	<div class="center-heading"><span>Horizontal Carousel</span></div>
+	
+    <slick class="horizontal-slider" ng-if="dataLoaded" init-onload="true" data="dataLoaded" slides-to-show="1" dots="false" autoplay="true">
+      <div ng-repeat="item in horizontal_items">
+		<div class="thumbnails">
+            <img class="thumbnail-image" ng-src="{{ item.src }}" alt="{{ item.title}}" />
+			<div class="simple-overlay"></div>
+			<ul class="slider-buttons" ng-if="item.description">
+				<li class="watch">Watch Trialer</li>
+				<li class="watch">View More</li>
+				<li class="watch">Watch Episode</li>
+			</ul>
+        </div>
+      </div>
+    </slick>
+	
+	<hr class="margin">
+	<div class="center-heading"><span>Vertical Carousel</span></div>
+	
+	<slick class="vertical-slider" ng-if="dataLoaded" init-onload="true" data="dataLoaded" slides-to-show="5" dots="false" >
+      <div ng-repeat="item in vertical_items">
+        <div class="thumbnails">
+            <img class="thumbnail-image" ng-src="{{ item.src }}" alt="{{ item.title}}" />
+			<div class="overlay" ng-if="item.description">
+				<div class="details">
+					<h2>{{ item.title }}</h2>
+					<p>{{ item.description }}</p>
+				</div>
+				<span class="watch">Watch</span>
+			</div>
+        </div>
+      </div>
+    </slick>
+	
+	
+  </body>
+
+</html>
