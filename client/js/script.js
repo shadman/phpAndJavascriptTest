@@ -7,7 +7,7 @@ app.controller('appController', function($scope, $timeout, $http){
   $scope.results = [];
 
   $timeout(function(){
-	$http.get('http://localhost/starzplay/phpAndJavascriptTest/services/web/app_dev.php/carousel').success(function(data) {
+	$http.get('../services/web/app_dev.php/carousel').success(function(data) {
 		$scope.results = data.result;
 			
 		$scope.horizontal_items = $scope.results.horizontalCarousel;
